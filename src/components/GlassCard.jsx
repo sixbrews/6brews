@@ -1,5 +1,3 @@
-import React from 'react';
-
 const GlassCard = () => {
   return (
     <div className = "w-3/4 h-3/4 rounded-xl bg-white/30 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center  ">
