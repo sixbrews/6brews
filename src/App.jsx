@@ -1,11 +1,13 @@
 import React from 'react';
 import GlassCard from './components/GlassCard';
+import OurProjects from './components/OurProjects';
 
 
 function App() {
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-background">
-      <GlassCard />
+    <div className='w-full h-screen flex flex-col justify-around items-center'>
+        <GlassCard />
+        
     </div>
   );
 }
