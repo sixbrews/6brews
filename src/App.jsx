@@ -1,11 +1,11 @@
-import React from 'react';
-import GlassCard from './components/GlassCard';
-
+import Navbar from "./components/Navbar";
+import Hero from "./pages/Hero";
 
 function App() {
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-background">
-      <GlassCard />
+    <div className="w-full">
+      <Navbar />
+      <Hero />
     </div>
   );
 }
