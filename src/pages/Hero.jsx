@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="text-[8rem] text-text_color font-[Sedan] font-medium uppercase">
           Innov8 Labs
         </h1>
-        <h2 className="text-xl text-text_color font-normal uppercase">
+        <h2 className="text-xl text-text_color font-normal uppercase font-[Sedan]">
           Where Tomorrow&apos;s Solutions are Born Today
         </h2>
       </div>
