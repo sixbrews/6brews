@@ -35,7 +35,7 @@ const Navbar = () => {
         <button
           id="close"
           onClick={handleNavbarClose}
-          className="w-full h-[100px] text-red-500 transition-all duration-300 ease-in-out flex justify-center items-center hover:bg-red-200 hover:scale-125 mb-10"
+          className="w-full h-[100px] text-accent transition-all duration-300 ease-in-out flex justify-center items-center hover:bg-teal-200 hover:scale-125 mb-10"
         >
           <AiOutlineClose />
         </button>
@@ -44,17 +44,15 @@ const Navbar = () => {
             <NavCard key={index} />
           ))}
         </div>
-        <div className="w-full h-[30%] border-t-[1px] border-accent mt-20 bg-accent flex flex-col items-center justify-center gap-5">
-          <p className="text-2xl text-text_color font-semibold">
-            Connect with Us
-          </p>
+        <div className="w-full h-[30%] border-t-[1px] border-accent mt-20 bg-teal-200 flex flex-col items-center justify-center gap-5">
+          <p className="text-2xl text-accent font-semibold">Connect with Us</p>
           <div className="flex items-center gap-5">
-            <BsLinkedin className="w-7 h-7 text-text_color cursor-pointer" />
-            <BsInstagram className="w-7 h-7 text-text_color cursor-pointer" />
+            <BsLinkedin className="w-7 h-7 text-accent cursor-pointer" />
+            <BsInstagram className="w-7 h-7 text-accent cursor-pointer" />
           </div>
         </div>
       </div>
-      <nav className="fixed w-full py-5 flex items-center justify-between px-10 font-light backdrop-blur-md">
+      <nav className="fixed w-full py-5 flex items-center justify-between px-10 font-light backdrop-blur-md z-[2]">
         <div className="h-full flex items-center gap-10">
           <img
             src={logo}
@@ -70,15 +68,12 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex items-center justify-center gap-10">
-          <div className="h-full flex items-center gap-10">
-            <button className="border-[1px] border-accent text-accent h-12 uppercase w-[150px] rounded-[10rem] font-light">
-              Apply
-            </button>
-            <p className="text-xl text-accent">Contact Us</p>
-          </div>
+          <button className="border-[1px] border-accent text-accent h-12 uppercase w-[150px] rounded-[10rem] font-light hover:border-text_color hover:text-text_color transition-all duration-300 ease-in-out">
+            Apply
+          </button>
           <div className="flex items-center gap-5 text-text_color">
-            <BsLinkedin className="w-5 h-5 text-accent cursor-pointer" />
-            <BsInstagram className="w-5 h-5 text-accent cursor-pointer" />
+            <BsLinkedin className="w-5 h-5 text-text_color cursor-pointer" />
+            <BsInstagram className="w-5 h-5 text-text_color cursor-pointer" />
           </div>
         </div>
       </nav>
