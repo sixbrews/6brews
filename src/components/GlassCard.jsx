@@ -1,20 +1,21 @@
 import CustomButton from "./CustomButton";
+import WebImg from "../assets/images/Web-dev-photo.webp";
 
-const GlassCard = () => {
+const GlassCard = ({serviceName}) => {
   return (
-    <div className="w-[350px] h-[450px] flex flex-col rounded-xl bg-white/30 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center">
-      <div className="w-[90%] h-[60%] flex flex-col rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center">
+    <div className="w-[320px] h-[420px] flex flex-col rounded-2xl bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center p-2 transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-110 duration-300">
+      <div className="w-[90%] h-[50%] flex flex-col rounded-xl shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center">
         <img
           className="w-full h-full rounded-xl"
-          src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80"
-        ></img>
+          src={WebImg}
+          alt={serviceName} // Alt text for accessibility
+        />
       </div>
-      <div className="w-[90%] h-[35%] flex flex-col rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl flex justify-around items-center">
-        <h1 className="text-white font-extrabold">Web Development</h1>
+      <div className="w-[90%] h-[40%] flex flex-col flex justify-around items-center rounded-2xl bg-white/10 shadow-lg ring-1 ring-black/5 backdrop-blur-3xl p-4">
+      <h1 className="text-white font-extrabold">{serviceName}</h1>
         <p className="text-white">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley{" "}
+          industry. Lorem Ipsum has been the industry's standard {" "}
         </p>
       </div>
     </div>
