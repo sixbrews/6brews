@@ -8,3 +8,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.cta-hero:hover .btn-block {
+  transform: translateX(-15rem);
+  transition: transform 0.5s ease;
+}
