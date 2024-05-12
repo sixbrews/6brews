@@ -35,7 +35,7 @@ export default function OurProjects() {
           pin: true,
           scrub: 0.5, // Reduced scrub value
           snap: 1 / (panels.length - 1),
-          end: "+=500", // Reduced scroll distance
+          end: "+=" + window.innerWidth, // Reduced scroll distance
         },
       });
     }, component);
