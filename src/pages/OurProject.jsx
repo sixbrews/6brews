@@ -29,11 +29,11 @@ export default function OurProjects() {
       let panels = gsap.utils.toArray(".panel");
       gsap.to(panels, {
         xPercent: -100 * (panels.length - 1),
-        ease: "power3.inOut", // Smooth easing function
+        ease: "none", // Smooth easing function
         scrollTrigger: {
           trigger: slider.current,
           pin: true,
-          scrub: 0.5, // Reduced scrub value
+          scrub: 1, // Reduced scrub value
           snap: 1 / (panels.length - 1),
           end: "+=" + window.innerWidth, // Reduced scroll distance
         },

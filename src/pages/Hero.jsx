@@ -3,7 +3,7 @@ import Stats from "../components/Stats";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center gap-5">
+    <div className="h-screen w-full flex flex-col items-center justify-center gap-5 -mt-20">
       <div className="w-full flex flex-col items-center">
         <h1 className="text-[8rem] text-text_color font-[Sedan] font-medium uppercase">
           Innov8 Labs

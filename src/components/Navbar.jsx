@@ -1,8 +1,9 @@
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import gsap from "gsap";
 import logo from "../assets/images/logo.png";
 import NavCard from "./NavCard";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleNavbarShow = () => {
@@ -52,23 +53,19 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="fixed w-full py-5 flex items-center justify-between px-10 font-light backdrop-blur-md z-[2]">
-        <div className="h-full flex items-center gap-10">
+      <nav className="absolute top-[40px] w-full py-5 flex items-center justify-between px-10 font-light z-[2]">
+        <Link to="/">
           <img
             src={logo}
             alt="innnov8-labs"
             className="w-[14rem] object-contain"
           />
+        </Link>
+        <div className="flex items-center justify-center gap-10">
           <button
             onClick={handleNavbarShow}
-            className="flex items-center justify-center gap-3 bg-accent text-text_color h-12 uppercase w-[200px] rounded-[10rem] font-light"
+            className="bg-accent text-text_color h-12 uppercase w-[150px] rounded-[10rem] font-light"
           >
-            <AiOutlineMenu className="text-bold" />
-            <span>Explore Menu</span>
-          </button>
-        </div>
-        <div className="flex items-center justify-center gap-10">
-          <button className="border-[1px] border-accent text-accent h-12 uppercase w-[150px] rounded-[10rem] font-light hover:border-text_color hover:text-text_color transition-all duration-300 ease-in-out">
             Apply
           </button>
           <div className="flex items-center gap-5 text-text_color">
