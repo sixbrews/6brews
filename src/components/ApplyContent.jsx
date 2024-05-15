@@ -3,7 +3,15 @@ const ApplyContent = () => {
     <div className="w-full min-h-screen flex items-center justify-center mt-20">
       <div className="w-1/2 flex flex-col items-center justify-center">
         <div className="w-full h-64 bg-white rounded-t-3xl"></div>
-        <div className="w-full h-[60vh] bg-form_background rounded-b-3xl"></div>
+        <div className="w-full h-[60vh] bg-form_background rounded-b-3xl">
+          <div>
+            <div>
+              <h1>Web Development Intern</h1>
+              <span>Location: Work from home</span>
+            </div>
+            <button>Click Me</button>
+          </div>
+        </div>
       </div>
     </div>
   );

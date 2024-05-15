@@ -41,7 +41,7 @@ const Navbar = () => {
           <AiOutlineClose />
         </button>
         <div className="w-full h-[50%] flex flex-wrap items-center justify-center gap-14">
-          {[1, 1, 1, 1, 1, 1, 1].map((_, index) => (
+          {[1, 1, 1, 1, 1].map((_, index) => (
             <NavCard key={index} />
           ))}
         </div>
