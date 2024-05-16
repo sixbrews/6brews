@@ -6,8 +6,15 @@ import OurProjects from "./pages/OurProject";
 import OurServices from "./pages/OurServices";
 import Why from "./pages/Why";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate(`/apply/${id}`);
+  };
+
   return (
     <div className="w-full overflow-hidden">
       <div className="w-full h-[40px] bg-accent text-text_color text-base flex items-center justify-center gap-2">
@@ -16,7 +23,7 @@ function App() {
         </h1>
         <AiOutlineArrowRight className="cursor-pointer" />
       </div>
-      <Navbar />
+      <Navbar handleNavigate={handleNavigate} />
       <Hero />
       <About />
       <Why />
